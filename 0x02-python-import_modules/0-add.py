@@ -1,7 +1,7 @@
 #!/usr/bin/python3
-import add_0
+
 if __name__ == "__main__":
-    
+    from add_0 import add
     """ 
     Printing result of addition between two numbers 
 
