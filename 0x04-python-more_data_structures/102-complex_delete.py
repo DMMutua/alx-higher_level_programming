@@ -1,11 +1,11 @@
 #!/usr/bin/python3
 def complex_delete(a_dictionary, value):
-    Newdict = a_dictionary.copy()
+    keys = []
+    for x, y in a_dictionary.items():
+        if y == value:
+            keys.append(x)
 
-    try:
-        for key in Newdict:
-            if value == a_dictionary[key]:
-                del a_dictionary[key]
-            return (a_dictionary)
-        except KeyError:
-            return (a_dictionary)
+    for x in keys:
+        del a_dictionary[x]
+
+    return a_dictionary
