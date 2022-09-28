@@ -2,6 +2,5 @@
 def common_elements(set_1, set_2):
     return set_1 & set_2
 # ALTERNATIVE CODE:
-#
 #commonality = set(set_1) - (set(set_1) - set(set_2))
 #return commonality
