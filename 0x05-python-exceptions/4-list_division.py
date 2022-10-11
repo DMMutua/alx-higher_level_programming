@@ -3,7 +3,7 @@
 def list_division(my_list_1, my_list_2, list_length):
     resulting_list = []
 
-    for items in range(list_length):
+    for item in range(list_length):
         try:
             resulting_list.append(my_list_1[item] / my_list_2[item])
         except ZeroDivisionError:
