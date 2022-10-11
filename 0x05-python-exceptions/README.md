@@ -30,7 +30,7 @@ A function that prints an integer using a object `value` that can contain any ty
 ### 8. Safe function
 A function that executes a function safely.
 ### 9. ByteCode -> Python #4
-A Python Function that does exactly the same as the following bytecode
+A Python Function `def magic_calculation(a, b):` that does exactly the same as the following bytecode
 ```
 3           0 LOAD_CONST               1 (0)
               3 STORE_FAST               2 (result)
