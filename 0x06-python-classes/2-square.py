@@ -9,8 +9,9 @@ class Square:
         """Initialization of a new Square.
 
         Attributes:
-            size (:obj:`int`, optional): The size of the new square as private instance.
-        
+            size (:obj:`int`, optional): The size of the new square
+            as private instance.
+
         Raise:
             TypeError: If `size` type is not `int`.
             ValueError: if `size` is less than `0`.
