@@ -56,22 +56,26 @@ class Square:
         self.__position = position
 
     def __check_tuple(self, position):
+        """check tuple validity"""
         if type(position) is tuple:
             return True
 
         return False
 
     def __check_indexes(self, position):
+        """check valid index"""
         if len(position) == 2:
             return True
 
         return False
 
     def __check_integers(self, position):
+        """check tuple content validity"""
         if type(position[0]) is int and type(position[1]) is int:
             return True
 
     def __check_values(self, position):
+        """check values are +ve"""
         if position[0] >= 0 and position[1] >= 0:
             return True
 
@@ -88,8 +92,15 @@ class Square:
         if self.__size == 0:
             print("")
 
-        [print("") for i in range(0, self.__position[1])]
-        for i in range(0, self.__size):
-            [print(" ", end="") for j in range(0, self.__position[0])]
-            [print("#", end="") for k in range(0, self.__size)]
-            print("")
+        if self.__position[1] > 0:
+            for i in range(self.__position[1]):
+                print('')
+
+        for j in range(1, self.area() + 1):
+            if j % self.__size == 1:
+                print('{:>{w}}'.format('#', w=self.__position[0] + 1), end='')
+            else:
+                print('#', end='')
+
+            if j % self.__size == 0 and j > 0:
+                print()
