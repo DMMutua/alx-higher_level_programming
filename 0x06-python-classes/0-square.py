@@ -7,4 +7,5 @@ This is an Empty Class defination of Square
 
 
 class Square:
+    """Representation of a Square."""
     pass
