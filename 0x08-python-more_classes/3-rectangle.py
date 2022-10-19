@@ -77,6 +77,10 @@ class Rectangle:
         return rect_str
 
     def __str__(self):
-        """Returns the Printable representation of a Rectangle Object"""
+        """
+        
+        Returns the Printable representation of a Rectangle Object
+
+        """
         
         return self.__drawing_rectangle()
