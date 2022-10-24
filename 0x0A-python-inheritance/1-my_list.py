@@ -11,10 +11,8 @@ class MyList(list):
 
     def print_sorted(self):
         """
-        Printing an object 'list' in ascending order
+        Printing an object 'list' in ascending order.
 
-        Sorting the list and then printing the output
+        Sorting the list and then printing the output.
         """
-
-        if issubclass(MyList, list):
-            print(sorted(self))
+        print(sorted(self)
