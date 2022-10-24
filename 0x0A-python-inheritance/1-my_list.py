@@ -15,4 +15,6 @@ class MyList(list):
 
         Sorting the list and then printing the output.
         """
-        print(sorted(self)
+
+        if issubclass(MyList, list):
+            print(sorted(self)
