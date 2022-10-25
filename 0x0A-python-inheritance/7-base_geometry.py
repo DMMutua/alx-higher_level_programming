@@ -20,7 +20,7 @@ class BaseGeometry:
         """Validates An Integer Value"""
 
         if type(value) is not int:
-            raise TypeError("{} must be an integer".format(name))
+            raise TypeError("{} must be an integer".format(self.name))
 
         if value <= 0:
-            raise ValueError("{name} must be greater than 0".format(name))
+            raise ValueError("{name} must be greater than 0".format(self.name))
