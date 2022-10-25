@@ -32,6 +32,4 @@ class Rectangle(BaseGeometry):
         Public Instance Method
         Returns: print() and str() representations of a Rectangle Object.
         """
-        rep = "[" + str(self.__class__.__name__) + "]"
-        rep += str(self.__width) + "/" + str(self.__height)
-        return rep
+        return '[Rectangle] ' + str(self.__width) + '/' + str(self.__height)
