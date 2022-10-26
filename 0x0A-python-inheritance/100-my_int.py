@@ -15,8 +15,10 @@ class MyInt(int):
 
     def __eq__(self, value):
         """Overrides `==` operator with `!=` behavior."""
+
         return self.real != value
 
     def __ne__(self, value):
         """Overriding `!=` operator with `==` behavior."""
+
         return self.real == value
