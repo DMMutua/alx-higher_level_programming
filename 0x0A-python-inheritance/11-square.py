@@ -26,6 +26,7 @@ class Square(Rectangle):
         """Returns the area of object `square`
         Overwrites the area method from `Rectangle`
         """
+
         return self.__size ** 2
 
     def __str__(self):
@@ -34,4 +35,5 @@ class Square(Rectangle):
         Overwrites the `super().__str__` method
         Returns: print() and str() representations of a Rectangle Object.
         """
+
         return '[Square] ' + str(self.__size) + '/' + str(self.__size)
