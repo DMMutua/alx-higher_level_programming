@@ -2,7 +2,7 @@
 """Definantions of a text file-reading function."""
 
 
-def read_filename(filename=""):
+def read_file(filename=""):
     """Print the contents of a UTF8 text file to stdout"""
     
     with open(filename, "r", encoding="utf-8") as a_file:
