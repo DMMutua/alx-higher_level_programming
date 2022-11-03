@@ -3,6 +3,7 @@
 Contains the class `Rectangle`. 
 Inherits from Base 
 """
+
 from models.base import Base
 
 
@@ -13,71 +14,96 @@ class Rectangle(Base):
     Methods:
         __init__()
     """
+
     def __init__(self, width, height, x=0, y=0, id=None):
         """Class Initializer"""
         super().__init__(id)
-        self.width = width
-        self.height = height
-        self.x = x
-        self.y = y
+
+        self.checkif_attr_is_int(width, 'width')
+        self.checkif_attr_is_int(height, 'height')
+        self.checkif_attr_is_int(x, 'x')
+        self.checkif_attr_is_int(y, 'y')
+
+        self.__width = width
+        self.__height = height
+        self.__x = x
+        self.__y = y
+
+    def checkif_attr_is_int(self, value, parameter):
+        """
+        instance method checks if parameters passed to setters
+        of attributes are admissible:
+        args:
+            value passed, parameter to be set
+        """
+
+        if type(value) is not int:
+            raise TypeError(parameter + ' must be an integer')
+
+        if value <= 0 and parameter in ('width', 'height'):
+            raise ValueError(parameter +' must be > 0')
+
+        if value < 0 and attribute in ('x','y'):
+            raise ValueError(parameter + ' must be >= 0')
 
     @property
     def width(self):
-    """getter function for __width"""
+        """
+        getter function for attribute with for all class objects
+        """
+
         return self.__width
 
     @width.setter
-    def width(self):
-    """setter function for width."""
-    if type(value) != int:
-            raise TypeError("width must be an integer")
-        if value <= 0:
-            raise ValueError("width must be > 0")
+    def width(self, parameter):
+        """
+        setter function of width for all class objects
+        """
 
-        self.__width = value
+        self.checkif_attr_is_int(parameter, 'width')
+
+        self.__width = parameter
 
     @property
     def height(self):
-        """Getter function for height"""
+        """getter for height attributes for class objects"""
+
         return self.__height
 
     @height.setter
     def height(self, value):
-        """setter function for height"""
+        """setter for height attribute"""
 
-        if type(value) is not int:
-            raise TypeError("height must be an integer")
-        if value <= 0:
-            raise ValueError("height must be > 0")
+        self.checkif_attr_is_int(value, 'height')
 
         self.__height = value
 
     @property
     def x(self):
-        """getter for private instance attribute x"""
+        """getter for x"""
+
         return self.__x
 
     @x.setter
-    def x(self, value):
+    def x(self, parameter):
         """setter for x"""
-        if type(value) is not int:
-            raise TypeError("x must be an integer")
-        if value <= 0:
-            raise ValueError("x must be > 0")
 
-        self.__x = value
+        self.checkif_attr_is_int(parameter, 'x')
+
+        self.__x = parameter
 
     @property
     def y(self):
         """getter for y"""
+
         return self.__y
 
     @y.setter
-    def y(self, value):
-        if type(value) is not int:
-            raise TypeError("y must be an integer")
-        if value <= 0:
-            raise ValueError("y must be > 0")
+    def y(self, parameter):
+        """setter for y"""
 
-        self.__y = value
+        self.checkif_attr_is_int(parameter, 'y')
+
+        self.__y = parameter
+
 
