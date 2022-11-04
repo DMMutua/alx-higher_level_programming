@@ -43,7 +43,7 @@ class Rectangle(Base):
         if value <= 0 and parameter in ('width', 'height'):
             raise ValueError(parameter +' must be > 0')
 
-        if value < 0 and attribute in ('x','y'):
+        if value < 0 and attribute in ('x', 'y'):
             raise ValueError(parameter + ' must be >= 0')
 
     @property
