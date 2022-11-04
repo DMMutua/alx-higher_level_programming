@@ -11,12 +11,13 @@ import json
 
 class Base:
     """
-    Base class 
-    Attributes:
-        __nb_objects - Private, global
+    Base class. 
+    Attributes:.
+        __nb_objects - Private, global.
     Methods:
-        constructor, 
+        constructor, .
     """
+
     __nb_objects = 0
     
     def __init__(self, id=None):
@@ -24,9 +25,9 @@ class Base:
         Initializer method of objects of class base:
 
         """
-        if id is not None:
-            self.id = id
-        else:
-            base.__nb_objects += 1
-            self.id = base.__nb_objects
 
+        if id is None:
+            Base.__nb_objects += 1
+            self.id = Base.__nb_objects
+        else:
+            self.id = id
