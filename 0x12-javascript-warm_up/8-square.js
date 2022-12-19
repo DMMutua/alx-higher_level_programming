@@ -2,14 +2,24 @@
 
 //A script that prints a square with the 'X' Letter
 
-const square_size = Math.floor(Number(process.argv[2]));
-if !(isNaN(square_size)
+const sq_size = Math.floor(Number(process.argv[2]));
+
+if (isNaN(sq_size))
 {
-  for (i = 0; i <= square_size; i++)
+  console.log('Missing size');
+}
+else
+{
+  let square_object = ''; // object to hold the square
+
+  for (let i = 0; i < sq_size; i++)
   {
-    for (1 = 0; i <= square_size; i++)
+    for (let j = 0; j < sq_size; j++)
     {
-      console.log('X');
+      square_object += 'X';
     }
+    square_object += '\n'; // Adding a newline after Each Row
   }
+
+  console.log(square_object)
 }
