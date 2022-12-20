@@ -1,6 +1,5 @@
 #!/usr/bin/node
 
-// Using Console.log() Interactively to Print Newline
-
-const Superlatives = 'C is fun\nPython is cool\nJavaScript is amazing';
-console.log(Superlatives);
+console.log('C is fun');
+console.log('Python is cool');
+console.log('Javascript is amazing');
