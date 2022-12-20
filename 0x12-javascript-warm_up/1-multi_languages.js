@@ -2,4 +2,5 @@
 
 // Using Console.log() Interactively to Print Newline
 
-console.log("C is fun","Python is cool","JavaScript is amazing")
+const Superlatives = 'C is fun\nPython is cool\nJavaScript is amazing';
+console.log(Superlatives);
