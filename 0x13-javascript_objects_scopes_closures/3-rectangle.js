@@ -9,7 +9,7 @@ module.exports = class Rectangle {
       this.width = 0;
       this.height = 0;
     }
-  }
+  };
 
   print () {
     for (let i = 0; i < this.height; i++) {
@@ -19,4 +19,5 @@ module.exports = class Rectangle {
     }
       console.log(rows);
   }
+}
 };
