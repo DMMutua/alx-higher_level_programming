@@ -1,6 +1,7 @@
 #!/usr/bin/node
 
-// Checks for Rectangle parameters
+// Rectangle Class with Methods for Constructing, Printing, 
+// Rotating and Doubling the Rectangle Objects
 
 module.exports = class Rectangle {
   constructor (width, height) {
@@ -8,7 +9,7 @@ module.exports = class Rectangle {
       this.width = width;
       this.height = height;
     }
-  }
+  };
 
   print () {
     for (let i = 0; i < this.height; i++) {
@@ -18,14 +19,14 @@ module.exports = class Rectangle {
     }
       console.log(row);
   }
+  };
 
   rotate () {
     [this.height, this.width] = [this.width, this.height];
-  }
+  };
 
   double () {
     this.width *= 2;
     this.height *= 2;
-  }
+  };
 };
-
