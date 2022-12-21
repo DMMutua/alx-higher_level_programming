@@ -1,4 +1,4 @@
-#!/usr/bin/node14
+#!/usr/bin/node
 
 const first_arg = Math.floor(Number(process.argv[2]));
 
