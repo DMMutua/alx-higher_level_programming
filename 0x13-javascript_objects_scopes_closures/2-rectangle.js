@@ -7,9 +7,6 @@ module.exports = class Rectangle {
     if (typeof w === 'number' && typeof h === 'number' && w > 0 && h > 0 ) {
       this.width = w;
       this.height = h;
-    } else {
-      this.width = 0;
-      this.height = 0;
     }
-  };
+  }
 };
