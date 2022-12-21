@@ -3,10 +3,6 @@
 // Rectangle Class with Methods for Constructing, Printing, 
 // Rotating and Doubling the Rectangle Objects
 
-#!/usr/bin/node
-
-//Rectangle Class with Constructor and Method for Printing
-
 module.exports = class Rectangle {
   constructor (w, h) {
     if (typeof w === 'number' && typeof h === 'number' && w > 0 && h > 0) {
