@@ -8,10 +8,10 @@
 //Rectangle Class with Constructor and Method for Printing
 
 module.exports = class Rectangle {
-  constructor (width, height) {
+  constructor (w, h) {
     if (typeof width === 'number' && typeof height === 'number' && width > 0 && height > 0) {
-      this.width = width;
-      this.height = height;
+      this.width = w;
+      this.height = h;
     } else {
       this.width = 0;
       this.height = 0;
