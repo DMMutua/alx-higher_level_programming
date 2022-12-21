@@ -1,4 +1,6 @@
-#!/usr/bin/node
+#!/usr/bin/node 
+
+//Rectangle Class with Constructor and Method for Printing
 
 module.exports = class Rectangle {
   constructor (width, height) {
