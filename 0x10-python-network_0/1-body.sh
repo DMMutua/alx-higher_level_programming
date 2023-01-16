@@ -1,3 +1,3 @@
 #!/bin/bash
 # A script to Take In a URL, Send a `GET` Request, and Display the body only of 200 Status code.
-resp=$(curl -so /dev/null -w "%{http_code}" -s $1 && echo $(curl -s $1))
+curl -sL -o /dev/null -w "%{http_code}\n{url_effective}\n" $1 -f && echo $(curl -sL $1)
