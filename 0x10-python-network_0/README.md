@@ -2,10 +2,10 @@
 This Section of the Repo hosts an array of scripts that perform Networking Tasks. Most of the Script use the `cURL` Command Line tool for Networking Automation.
 
 ## Useful Resources
-[HTTP {HyperText Transfer Protocol}](https://www3.ntu.edu.sg/home/ehchua/programming/webprogramming/HTTP_Basics.html)
-[cURL Manpages](https://curl.se/docs/manpage.html)
-[HTTP Cookies](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies)
-[Run Curl Commands Online](https://reqbin.com/curl)
+[HTTP {HyperText Transfer Protocol}](https://www3.ntu.edu.sg/home/ehchua/programming/webprogramming/HTTP_Basics.html)<br>
+[cURL Manpages](https://curl.se/docs/manpage.html)<br>
+[HTTP Cookies](https://developer.mozilla.org/en-US/docs/Web/HTTP/Cookies)<br>
+[Run Curl Commands Online](https://reqbin.com/curl)<br>
 
 ## General Learning Objectives
 * What a URL is
