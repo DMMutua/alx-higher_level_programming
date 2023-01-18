@@ -3,9 +3,10 @@
 Displays the value of the X-Request-Id Variable found in the header of response.
 """
 
-from urllib.request import urlopen
+from urllib import request
 from sys import argv
 
 
-with urlopen(argv[1]) as response:
-    print(response.getheader('X-Request-Id'))
+if __name__ == '__main__':
+    with request.urlopen(argv[1]) as response:
+        print(response.getheader('X-Request-Id'))
